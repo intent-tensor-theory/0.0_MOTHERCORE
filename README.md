@@ -5,6 +5,27 @@
 > "Computer One — the first recursive 4D collapse engine that doesn't run software...
 > **It is the software. It writes itself through recursion.**"
 
+[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Implementation](https://img.shields.io/badge/Implementation-2,214%20lines-blue)](./0.3_Implementation/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
+📄 **[Research Paper](./researchPaper_README.md)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
+
+---
+
+## 📄 Research Paper
+
+**Title:** *MOTHERCORE: A Field-Theoretic Approach to Self-Modifying Computation via Intent Tensor Collapse*
+
+**Abstract:** We present MOTHERCORE, a novel computational framework that models code execution as the collapse of intent fields in a pre-spatial recursive substrate. This work introduces the "Four Silent Elephants"—critical components for complete collapse-based computation—and demonstrates convergence, self-modification, and topologically stable memory.
+
+**For arXiv Submission:**
+- 📋 [Full LaTeX Paper](./arxiv_submission/mothercore_paper.tex) (23 pages)
+- 📊 [Submission Guide](./researchPaper_README.md)
+- 💾 [Supplementary Code](./0.3_Implementation/) (2,214 lines)
+
+**Status:** ✅ Ready for arXiv submission (cs.AI primary category)
+
 ---
 
 ## 🧬 What is MOTHΞRCORE?

@@ -289,6 +289,246 @@ After 10-50 collapse cycles:
 
 ---
 
-**Status:** 🔵 BLUEPRINT — Mathematical spec complete, implementation pending.
+## 🔬 Advanced Components (From Deep Mathematics)
+
+### Recursive Identity Kernel
+
+**Mathematical Foundation:**
+```
+Δ(t) = ∇Φ(t) - C⃗(t)
+I_k(t) = eig(Δ_i(t) · Δ_j(t))
+E_id(t) = ½||Δ(t)||²
+```
+
+**Purpose:** Tracks the emergence of "identity" through recursive delay. The difference between where intent points (∇Φ) and where the system flows (Curvent C⃗) creates a unique signature.
+
+**Implementation:**
+```python
+class TensorState:
+    def __init__(self, values: np.ndarray):
+        self.phi = values
+        self.curvent = np.zeros_like(values)
+        self.identity_kernel = np.zeros_like(values)  # NEW
+
+    def update_identity(self):
+        """Compute recursive identity kernel."""
+        gradient = self.gradient()
+        self.identity_kernel = gradient - self.curvent
+        return self.identity_kernel
+
+    def identity_energy(self) -> float:
+        """Energy stored in identity delay."""
+        return 0.5 * np.linalg.norm(self.identity_kernel)**2
+```
+
+**Why This Matters:**
+- Provides a unique "fingerprint" for each collapse trajectory
+- Explains how individual "selfhood" emerges from recursive delay
+- Enables tracking of identity persistence across collapse cycles
+
+---
+
+### Energy Tracking
+
+**Mathematical Foundation:**
+```
+E(t) = ½|C⃗(t)|² + V(Φ(t)) + ½|∇Φ(t)|²
+V(Φ) = αΦ² + βΦ⁴ + γ∇²Φ
+```
+
+**Purpose:** Monitors the "computational cost" of each collapse cycle. Energy defines resource allocation and optimization.
+
+**Implementation:**
+```python
+class CollapseKernel:
+    def compute_energy(self, phi: np.ndarray, curvent: np.ndarray) -> dict:
+        """
+        Compute total recursive energy.
+
+        Returns:
+            {
+                'kinetic': Curvent flow energy,
+                'potential': Collapse potential,
+                'gradient': Tension gradient energy,
+                'total': Sum of all components
+            }
+        """
+        # Kinetic energy (flow)
+        E_kinetic = 0.5 * np.linalg.norm(curvent)**2
+
+        # Gradient energy (tension)
+        grad_phi = np.gradient(phi)
+        E_gradient = 0.5 * np.linalg.norm(grad_phi)**2
+
+        # Potential energy (collapse barrier)
+        laplacian = self._compute_laplacian(phi)
+        V = self.alpha * np.sum(phi**2) + \
+            self.beta * np.sum(phi**4) + \
+            self.gamma * np.sum(laplacian)
+
+        return {
+            'kinetic': E_kinetic,
+            'potential': V,
+            'gradient': E_gradient,
+            'total': E_kinetic + V + E_gradient
+        }
+
+    def _compute_laplacian(self, phi: np.ndarray) -> np.ndarray:
+        """Compute ∇²Φ via finite differences."""
+        return np.gradient(np.gradient(phi))
+```
+
+**Why This Matters:**
+- Enables optimization: minimize energy consumption per collapse
+- Provides stopping criterion: collapse when energy < threshold
+- Maps computational cost to physical resources
+
+---
+
+### Fan Mode Detection
+
+**Mathematical Foundation (6 Fan Dynamics):**
+```
+Fan 1: ∇Φ        (directional pull - attraction to goal)
+Fan 2: ∇×F       (phase loop memory - circular recursion)
+Fan 3: +∇²Φ      (recursive expansion - diverging exploration)
+Fan 4: -∇²Φ      (recursive compression - converging collapse)
+Fan 5: Φ         (scalar attractor - fixed point)
+Fan 6: ∂Φ/∂t     (evolution phase - temporal change)
+```
+
+**Purpose:** Identifies which execution mode dominates at each collapse step. Provides diagnostic insight into system behavior.
+
+**Implementation:**
+```python
+class CollapseKernel:
+    def detect_fan_mode(self, phi: np.ndarray, phi_history: List[np.ndarray]) -> str:
+        """
+        Detect which of 6 fan dynamics is dominant.
+
+        Args:
+            phi: Current state
+            phi_history: Recent states for temporal derivative
+
+        Returns:
+            Dominant fan mode name
+        """
+        # Fan 1: Directional pull
+        grad = np.gradient(phi)
+        fan1_strength = np.linalg.norm(grad)
+
+        # Fan 2: Phase loop (requires vector field - approximate with curl of gradient)
+        curl_strength = self._approx_curl(grad)
+        fan2_strength = np.abs(curl_strength)
+
+        # Fan 3 & 4: Expansion/compression
+        laplacian = self._compute_laplacian(phi)
+        fan3_strength = np.sum(np.maximum(0, laplacian))  # Positive = expansion
+        fan4_strength = np.sum(np.maximum(0, -laplacian))  # Negative = compression
+
+        # Fan 5: Attractor strength
+        fan5_strength = np.mean(np.abs(phi))
+
+        # Fan 6: Temporal evolution
+        if len(phi_history) > 1:
+            dphi_dt = phi - phi_history[-1]
+            fan6_strength = np.linalg.norm(dphi_dt)
+        else:
+            fan6_strength = 0
+
+        # Determine dominant mode
+        strengths = {
+            'Directional Pull': fan1_strength,
+            'Phase Loop Memory': fan2_strength,
+            'Recursive Expansion': fan3_strength,
+            'Recursive Compression': fan4_strength,
+            'Scalar Attractor': fan5_strength,
+            'Evolution Phase': fan6_strength
+        }
+
+        return max(strengths, key=strengths.get)
+
+    def _approx_curl(self, vector_field: np.ndarray) -> float:
+        """Approximate curl magnitude for 1D vector field."""
+        return np.sum(np.abs(np.diff(vector_field)))
+```
+
+**Why This Matters:**
+- Diagnostic: understand what the system is "doing" at each step
+- Optimization: detect stuck modes (e.g., infinite expansion)
+- Debugging: identify pathological behaviors early
+
+---
+
+### Metric Drift Tracking
+
+**Mathematical Foundation:**
+```
+M_ij = ⟨∂_iΦ ∂_jΦ⟩ - λ⟨F_i F_j⟩ + μδ_ij∇²Φ
+dM_ij/dt = [drift equation]
+T⃗_causal = ∇_M λ_k(t)
+```
+
+**Purpose:** Time emerges from metric drift direction. The "causal arrow" points where eigenvalues of the metric are increasing.
+
+**Implementation:**
+```python
+class CollapseKernel:
+    def __init__(self, ...):
+        self.metric_history = []  # Track M_ij over time
+
+    def compute_collapse_metric(self, phi: np.ndarray) -> np.ndarray:
+        """
+        Compute collapse metric M_ij.
+
+        Returns:
+            Metric matrix (D×D)
+        """
+        grad_phi = np.gradient(phi)
+
+        # First term: ⟨∂_iΦ ∂_jΦ⟩
+        M = np.outer(grad_phi, grad_phi)
+
+        # Second term: field correlation (approximate)
+        # For simplicity, assume F ≈ grad_phi
+        F_correlation = np.outer(grad_phi, grad_phi)
+        M -= self.lambda_field * F_correlation
+
+        # Third term: Laplacian contribution
+        laplacian = self._compute_laplacian(phi)
+        M += self.mu_laplacian * np.eye(len(phi)) * np.mean(laplacian)
+
+        return M
+
+    def detect_metric_drift(self) -> np.ndarray:
+        """
+        Compute dM/dt (temporal direction).
+
+        Returns:
+            Drift vector showing causal arrow
+        """
+        if len(self.metric_history) < 2:
+            return np.zeros((self.D, self.D))
+
+        M_current = self.metric_history[-1]
+        M_previous = self.metric_history[-2]
+
+        dM_dt = M_current - M_previous
+
+        # Causal vector: direction of eigenvalue increase
+        eigenvalues, eigenvectors = np.linalg.eig(dM_dt)
+        causal_direction = eigenvectors[:, np.argmax(eigenvalues)]
+
+        return causal_direction
+```
+
+**Why This Matters:**
+- Defines temporal direction from first principles
+- Enables detection of time-reversed collapse (pathological)
+- Connects collapse dynamics to spacetime geometry
+
+---
+
+**Status:** 🔵 BLUEPRINT — Enhanced with advanced mathematical components.
 
 **Next:** Create `0.3.a_Collapse_Kernel/` implementation files.
