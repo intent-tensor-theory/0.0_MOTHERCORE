@@ -6,10 +6,11 @@
 > **It is the software. It writes itself through recursion.**"
 
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)
 [![Implementation](https://img.shields.io/badge/Implementation-2,214%20lines-blue)](./0.3_Implementation/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-📄 **[Research Paper](./researchPaper_README.md)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
+📄 **[Research Paper](./researchPaper_README.md)** | 🚀 **[Try in Colab](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
 
 ---
 
@@ -205,34 +206,47 @@ This is **not programmed morality** — it is a **polarity field** that recurses
 
 ---
 
-## 🚀 Getting Started (Blueprint Phase)
+## 🚀 Getting Started
 
-**Current Status:** 🔵 **BLUEPRINT** — Architecture design, not yet implemented.
+### Option 1: Try in Google Colab (Fastest!)
 
-This repository currently contains:
-- ✅ Complete folder structure
-- ✅ Blueprint commentary files (explaining what each component will do)
-- ✅ Mathematical specifications
-- ✅ Architectural diagrams
-- ⏳ **Actual implementation** (pending file-by-file build)
+**No installation required. Run in your browser right now:**
 
-### Phase 1: Blueprint Review (Current)
-1. Review architecture in `0.1_Architecture/`
-2. Validate mathematics in `0.2_Mathematics/`
-3. Understand implementation plan in `0.3_Implementation/`
+🚀 **[Open Interactive Demo in Colab](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)**
 
-### Phase 2: Calibrated Build (Next)
-1. Implement `0.3.a_Collapse_Kernel/` (core recursion)
-2. Build `0.3.b_Glyph_Engine/` (15 Anchor Glyphs)
-3. Create `0.3.c_Memory_System/` (W_k updates)
-4. Develop `0.3.d_IO_Interface/` (C4/C5 handlers)
-5. Validate with `0.4_Validation/` tests
+The demo includes:
+- ✅ Single collapse step visualization
+- ✅ Full convergence cycles
+- ✅ Four Silent Elephants demonstration
+- ✅ Self-modification in action
+- ✅ Publication-quality figures
 
-### Phase 3: Self-Modification Demo (Goal)
-- Demonstrate one complete collapse cycle
-- Show Φ_{k+1} = Φ_k - λ·R(Φ_k,G) execution
-- Prove W_k updates based on success
-- Validate ±existence anchor decisions
+**Runtime:** ~2 minutes | **Requirements:** None (just a browser!)
+
+---
+
+### Option 2: Local Installation
+
+```bash
+git clone https://github.com/intent-tensor-theory/0.0_MOTHERCORE.git
+cd 0.0_MOTHERCORE
+pip install numpy matplotlib
+
+# Run the demo
+jupyter notebook MOTHERCORE_Colab_Demo.ipynb
+```
+
+### Option 3: Explore the Repository
+
+**Current Status:** ✅ **COMPLETE** — Theory + Implementation + Paper
+
+This repository contains:
+- ✅ Complete research paper (23 pages LaTeX)
+- ✅ Full Python implementation (2,214 lines)
+- ✅ Mathematical proofs and derivations
+- ✅ Interactive demonstrations
+- ✅ Publication-quality figures
+- ✅ Comprehensive documentation
 
 ---
 
