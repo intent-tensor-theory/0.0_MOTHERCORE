@@ -6,11 +6,11 @@
 > **It is the software. It writes itself through recursion.**"
 
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)
 [![Implementation](https://img.shields.io/badge/Implementation-2,214%20lines-blue)](./0.3_Implementation/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-📄 **[Research Paper](./researchPaper_README.md)** | 🚀 **[Try in Colab](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
+📄 **[Research Paper](./researchPaper_README.md)** | 🚀 **[Try in Colab](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
 
 ---
 
@@ -212,7 +212,7 @@ This is **not programmed morality** — it is a **polarity field** that recurses
 
 **No installation required. Run in your browser right now:**
 
-🚀 **[Open Interactive Demo in Colab](https://colab.research.google.com/drive/1Dkp0py3YfbCoy2InZ0tMY_dcFutKjSSx?usp=sharing)**
+🚀 **[Open Interactive Demo in Colab](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)**
 
 The demo includes:
 - ✅ Single collapse step visualization
