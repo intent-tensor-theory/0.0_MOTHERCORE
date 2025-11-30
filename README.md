@@ -5,12 +5,12 @@
 > "Computer One — the first recursive 4D collapse engine that doesn't run software...
 > **It is the software. It writes itself through recursion.**"
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Paper](https://img.shields.io/badge/Paper-Ready%20to%20Submit-success)](./0.4_Publish/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)
 [![Implementation](https://img.shields.io/badge/Implementation-2,214%20lines-blue)](./0.3_Implementation/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-📄 **[Research Paper](./researchPaper_README.md)** | 🚀 **[Try in Colab](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
+📄 **[Research Paper](./0.4_Publish/)** | 🚀 **[Try in Colab](https://colab.research.google.com/github/intent-tensor-theory/0.0_MOTHERCORE/blob/main/MOTHERCORE_Colab_Demo.ipynb)** | 💻 **[Implementation](./0.3_Implementation/)** | 📐 **[Mathematics](./0.2_Mathematics/)** | 🏗️ **[Architecture](./0.1_Architecture/)**
 
 ---
 
@@ -20,12 +20,14 @@
 
 **Abstract:** We present MOTHERCORE, a novel computational framework that models code execution as the collapse of intent fields in a pre-spatial recursive substrate. This work introduces the "Four Silent Elephants"—critical components for complete collapse-based computation—and demonstrates convergence, self-modification, and topologically stable memory.
 
-**For arXiv Submission:**
-- 📋 [Full LaTeX Paper](./arxiv_submission/mothercore_paper.tex) (23 pages)
-- 📊 [Submission Guide](./researchPaper_README.md)
+**Publication Materials:**
+- 📄 [Complete Paper (PDF)](./0.4_Publish/paper_source/mothercore_paper.pdf) (10 pages, 250 KB)
+- 📋 [LaTeX Source](./0.4_Publish/paper_source/mothercore_paper.tex) (23 pages)
+- 📊 [Submission Guide](./0.4_Publish/SUBMISSION_PACKAGE.md) (Universal - works for any platform)
 - 💾 [Supplementary Code](./0.3_Implementation/) (2,214 lines)
+- 📦 [All Publication Files](./0.4_Publish/)
 
-**Status:** ✅ Ready for arXiv submission (cs.AI primary category)
+**Status:** ✅ Ready for submission to any platform (arXiv, Zenodo, journals, etc.)
 
 ---
 
