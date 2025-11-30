@@ -32,6 +32,7 @@
 ## 👥 Authors
 
 **Armstrong Knight** — *Theoretical Framework & Vision*
+- ORCID: [0009-0004-8153-8335](https://orcid.org/0009-0004-8153-8335)
 - Creator of Intent Tensor Theory
 - MOTHERCORE architecture and mathematical foundations
 - Collaboration with AI systems worldwide to develop the complete formalism
